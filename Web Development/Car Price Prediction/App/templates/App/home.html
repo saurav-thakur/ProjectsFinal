@@ -1,0 +1,121 @@
+{% extends 'App/layout.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+<h1 class="text-white text-center"> Are you tight on your budget and want to buy a new car?
+    Well this is the right place for you</h1>
+
+
+<form action="" method="POST" class="row g-3">
+
+    {% csrf_token %}
+
+    <div class="col-md-4">
+        <label for="levy" class="form-label text-white">Levy</label>
+        <input type="text" name="levy" class="form-control" id="levy" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+
+    <div class="col-md-4">
+        <label for="manufacturer" class="form-label text-white">Manufacturer</label>
+        <input type="text" name="manufacturer" class="form-control" id="manufacturer" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="model" class="form-label text-white">Model</label>
+        <input type="text" name="model" class="form-control" id="model" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="productionyear" class="form-label text-white">Production Year</label>
+        <input type="text" name="productionyear" class="form-control" id="productionyear" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="category" class="form-label text-white">Category</label>
+        <input type="text" name="category" class="form-control" id="category" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="leatherinterior" class="form-label text-white">Leather Interior</label>
+        <input type="text" name="leatherinterior" class="form-control" id="Leatherinterior" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="fueltype" class="form-label text-white">Fuel Type</label>
+        <input type="text" name="fueltype" class="form-control" id="fueltype" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="enginevolume" class="form-label text-white">Engine Volume</label>
+        <input type="text" name="enginevolume" class="form-control" id="enginevolume" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="mileage" class="form-label text-white">Mileage</label>
+        <input type="text" name="mileage" class="form-control" id="mileage" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="cylinders" class="form-label text-white">Cylinders</label>
+        <input type="text" name="cylinders" class="form-control" id="cylinders" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="gearboxtype" class="form-label text-white">Gear Box Type</label>
+        <input type="text" name="gearboxtype" class="form-control" id="gearboxtype" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="drivewheels" class="form-label text-white">Drive Wheels</label>
+        <input type="text" name="drivewheels" class="form-control" id="drivewheels" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="doors" class="form-label text-white">Doors</label>
+        <input type="text" name="doors" class="form-control" id="doors" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="wheel" class="form-label text-white">Wheel</label>
+        <input type="text" name="wheel" class="form-control" id="wheel" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="color" class="form-label text-white">Color</label>
+        <input type="text" name="color" class="form-control" id="color" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="airbags" class="form-label text-white">Airbags</label>
+        <input type="text" name="airbags" class="form-control" id="airbags" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-md-4">
+        <label for="isturbo" class="form-label text-white">isTurbo</label>
+        <input type="text" name="isturbo" class="form-control" id="isturbo" required>
+    </div>
+    {% comment %} ----------------- {% endcomment %}
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid alert alert-primary text-dark text-center ">
+        <div class="container">
+            <h1 class="display-4">Prediction</h1>
+            <p class="lead">The Predicted price is ${{ pred }}</p>
+        </div>
+    </div>
+
+
+    {% comment %} <h1 class="text-dark text-center text-bold alert alert-primary"> The Predicted price is ${{ pred }}
+    </h1> {% endcomment %}
+
+
+
+</form>
+
+{% endblock content %}

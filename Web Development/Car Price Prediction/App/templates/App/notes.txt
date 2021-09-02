@@ -1,0 +1,2 @@
+1. Add Navbar links to see example of the dataset
+2. Add drop down button to categorical values
