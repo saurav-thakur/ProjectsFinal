@@ -2,6 +2,7 @@
 
   This project was actually a hackathon organized by Math Company on Machine    Hack's website.
   Link to Hackathon - https://machinehack.com/hackathons/data_hack_mathcothon_car_price_prediction_challenge/overview
+  My Notebook - https://github.com/saurav-thakur/ProjectsFinal/blob/main/Web%20Development/Car%20Price%20Prediction/Final%20Model.ipynb
   
 ## I have followed all the machine learning lifecycle such as:
 a. Gathering Data                                                                                                                                                                   
